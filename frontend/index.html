@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B_sale</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="/frontend/css/normalize.css">
@@ -20,7 +22,8 @@
     </div>
   </nav>
 
-  <header class="container filter-content my-2">
+  <header class="container filter-content my-4">
+
     <form class="form-search" id="formulario">
       <input type="text" placeholder="Buscar por..." id="inputFormulario">
       <i class="fas fa-search"></i>
@@ -41,10 +44,188 @@
     </div>
 
   </header>
+  <!-- section store -->
+  <section class="store">
+    <div class="container">
+      <div class="items">
+        <!-- <div class="row">
 
-  <main class="container grid" id="productos">
+          <div class="col-12 col-md-3">
+            <div class="item shadow mb-4 pt-3">
+              <h6 class="item-title text-center">ENERGETICA MR BIG</h6>
+              <img class="item-image" src="https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg">
+              <div class="item-details ml-3">
+                <p>Precio</p>
+                <h4 class="item-price"> 1999 </h4>
+                <button class="item-button btn btn-secondary mb-3 addToCart">AÑADIR AL CARRITO</button>
+              </div>
+            </div>
+          </div>
 
-  </main>
+          <div class="col-12 col-md-3">
+            <div class="item shadow mb-4 pt-3">
+              <h6 class="item-title text-center">ENERGETICA MR BIG</h6>
+              <img class="item-image" src="https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg">
+              <div class="item-details ml-3">
+                <p>Precio</p>
+                <h4 class="item-price"> 1999 </h4>
+                <button class="item-button btn btn-secondary mb-3 addToCart">AÑADIR AL CARRITO</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="item shadow mb-4 pt-3">
+              <h6 class="item-title text-center">ENERGETICA MR BIG</h6>
+              <img class="item-image" src="https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg">
+              <div class="item-details ml-3">
+                <p>Precio</p>
+                <h4 class="item-price"> 1999 </h4>
+                <button class="item-button btn btn-secondary mb-3 addToCart">AÑADIR AL CARRITO</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="item shadow mb-4 pt-3">
+              <h6 class="item-title text-center">ENERGETICA MR BIG</h6>
+              <img class="item-image" src="https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg">
+              <div class="item-details ml-3">
+                <p>Precio</p>
+                <h4 class="item-price"> 1999 </h4>
+                <button class="item-button btn btn-secondary mb-3 addToCart">AÑADIR AL CARRITO</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="item shadow mb-4 pt-3">
+              <h6 class="item-title text-center">ENERGETICA MR BIG</h6>
+              <img class="item-image" src="https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg">
+              <div class="item-details ml-3">
+                <p>Precio</p>
+                <h4 class="item-price"> 1999 </h4>
+                <button class="item-button btn btn-secondary mb-3 addToCart">AÑADIR AL CARRITO</button>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- shopping  section-->
+  <section class="shopping-cart">
+    <div class="container">
+
+      <h1 class="text-center">TUS PRODUCTOS</h1>
+      <hr>
+      <div class="row">
+        <div class="col-6">
+          <div class="shopping-cart-header">
+            <h6>Producto</h6>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="shopping-cart-header">
+            <h6 class="text-truncate">Precio</h6>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="shopping-cart-header">
+            <h6>Cantidad</h6>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="shopping-cart-items shoppingCartItemsContainer">
+
+        <!-- <div class="row shoppingCartItem">
+          <div class="col-6">
+            <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+              <img src='https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg'
+                class="shopping-cart-image">
+              <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">ENERGETICA MR BIG
+              </h6>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+              <p class="item-price mb-0 shoppingCartItemPrice">1999</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div
+              class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+              <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
+              <button class="btn btn-danger buttonDelete" type="button">X</button>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <div class="shopping-cart-total d-flex align-items-center">
+            <p class="mb-0">Total</p>
+            <p class="ml-4 mb-0 shoppingCartTotal">$ </p>
+            <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+              <div class="toast-header">
+                <span>✅</span>
+                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="toast-body text-white">
+                Se aumentó correctamente la cantidad
+              </div>
+            </div>
+            <button class="btn btn-secondary ml-auto comprarButton" type="button" data-toggle="modal"
+              data-target="#comprarModal">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Pronto recibirá su pedido</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/shopping.js"></script>
 </body>
 
 </html>
