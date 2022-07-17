@@ -10,8 +10,9 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="/frontend/css/normalize.css">
-  <link rel="stylesheet" href="/frontend/css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/custom-select.css">
 
 </head>
 
@@ -29,17 +30,17 @@
       <i class="fas fa-search"></i>
     </form>
 
-    <div class="custom-selct" style="width: 200px;">
+    <div class="custom-select" style="width: 300px">
       <select>
         <option value="">Filtrar por Producto</option>
         <option value="">Todos</option>
-        <option value="">Bebida</option>
-        <option value="">Bebida Energetica</option>
-        <option value="">Cerveza</option>
-        <option value="">Pisco</option>
-        <option value="">Ron</option>
-        <option value="">Snack</option>
-        <option value="">Vodka</option>
+        <option value="bebida">Bebida</option>
+        <option value="bebida energetica">Bebida Energetica</option>
+        <option value="cerveza">Cerveza</option>
+        <option value="pisco">Pisco</option>
+        <option value="ron">Ron</option>
+        <option value="snack">Snack</option>
+        <option value="vodka">Vodka</option>
       </select>
     </div>
 
@@ -47,7 +48,7 @@
   <!-- section store -->
   <section class="store">
     <div class="container">
-      <div class="items">
+      <div class="items" id="items">
         <!-- <div class="row">
 
           <div class="col-12 col-md-3">
@@ -224,8 +225,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
   <script src="./js/index.js"></script>
+  <script src="./js/custom-select.js"></script>
   <script src="./js/shopping.js"></script>
+  <script src="./js/formulario.js"></script>
+
 </body>
 
 </html>
