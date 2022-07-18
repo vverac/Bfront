@@ -1,15 +1,12 @@
 const serverUrl = 'http://localhost:3000/'
 const itemsPath = 'productos/'
-const itemsCatPath = 'categorias/'
 
-
-// window.onload = getData()
 
 const items = document.querySelector('.items')
 
 const getData = async () => {
   try {
-    const res = await fetch(`${serverUrl}${itemsCatPath}`)
+    const res = await fetch(`${serverUrl}${itemsPath}`)
     const data = await res.json()
     printData(data)
     formularioCliente(data)
@@ -18,17 +15,6 @@ const getData = async () => {
     console.log(error)
   }
 }
-
-// const fetchData = async () => {
-//   try {
-//     const res = await fetch(`${serverUrl}${itemsCatPath}`)
-//     const data = await res.json()
-//     printData(data)
-//     filtros(data)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
 
 const printData = data => {
   let productos = ''
@@ -53,8 +39,4 @@ const printData = data => {
   items.innerHTML = productos;
 }
 
-
-
-
 getData()
-// fetchData()
