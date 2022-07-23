@@ -1,4 +1,4 @@
-const serverUrl = 'http://localhost:3000/'
+const serverUrl = ' https://murmuring-sea-90143.herokuapp.com/'
 const itemsPath = 'productos/'
 
 
