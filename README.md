@@ -1,6 +1,6 @@
 El proyecto es una tienda online que despliega productos agrupados por la categoría a la que pertenecen y tiene un buscador de productos, contruido por separados backend (API REST) y frontend (aplicación que la consuma) y utilizando la base de datos que se disponibiliza para el desarrollo del proyecto.
 
-FRONEND
+FRONTEND
 La aplicación Frontend esta creada con HTML5, CSS, normalizeCss, Boostrap, fontawesome, y javascript vanilla.
 
 Para realizar las peticiones a la API, se hacen mediante fetch.
